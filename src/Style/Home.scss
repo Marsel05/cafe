@@ -443,6 +443,7 @@
       &__archive {
         display: flex;
         justify-content: space-between;
+
         align-items: center;
 
         &--icon {
@@ -456,6 +457,9 @@
           height: 1px;
           background: #FFFFFF;
         }
+
+        padding-top: -50px;
+
 
         h4 {
           font-family: 'Spartan', sans-serif;
@@ -527,6 +531,38 @@
       &__line-bottom {
         width: 90%;
         bottom: 2%;
+
+        &--lin {
+          width: 56px;
+          border: 1px solid #FFFFFF;
+          margin: 0 15px;
+          p {
+            color: white;
+          }
+        }
+        p {
+          color: white;
+        }
+      }
+    }
+    &--absolute{
+      &__local1{
+        position: absolute;
+        bottom: 200px;
+        left: -100px;
+        margin-right: 10px;
+        width: 340px;
+        opacity: 0.6;
+        border: 0.4px solid #444343FF;
+        transform: rotate(-90deg);
+      }
+      &__local2{
+        width: 1321px;
+        border: 0.2px solid #444343;
+        position: absolute;
+        bottom: 10px;
+        right: 100px;
+
       }
     }
   }
