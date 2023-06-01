@@ -96,23 +96,15 @@ const Search = () => {
             <div className="container">
                 <div className="search">
 
-                    <div className="search--button" onClick={handleSearch}>
-                    <MdSearch />
-                </div>
+                    <div className="search--button">
+                        <MdSearch />
+                    </div>
                     <input
                         type="text"
-                        value={searchQuery}
-                        onChange={handleSearchChange}
                         className="search-input"
                         placeholder="Поиск"
                     />
 
-                    {filteredCards?.map((card, index) => (
-                        <div className="card" key={index}>
-                            {/* Render the filtered cards */}
-                            {card.name}
-                        </div>
-                    ))}
                     <button className="search-button"><MdSearch /></button>
                     <input type="text" placeholder="Search" className="search-input" />
                 </div>
