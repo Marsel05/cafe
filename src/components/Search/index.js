@@ -1,3 +1,4 @@
+
 // import React, { useState } from 'react';
 // import { MdSearch } from "react-icons/md";
 //
@@ -87,6 +88,7 @@
 //     );
 // };
 // export default Search;
+
 import React from 'react';
 import { MdSearch } from "react-icons/md";
 
@@ -106,6 +108,9 @@ const Search = () => {
                     />
 
                     <button className="search-button"><MdSearch /></button>
+
+                    <input type="text" placeholder="Search" className="search-input" />
+
                 </div>
             </div>
         </div>
